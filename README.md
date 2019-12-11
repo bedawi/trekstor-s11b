@@ -16,12 +16,9 @@ This repository has been set up to help you to run Linux on your Trekstor Primet
 ## Hardware working with patches from this repository
 
 * Touchscreen orientation sensor -> See hwdb.d folder
+* Touchpad -> See bugfixes/keyboardcover
 
-## Hardware that needs patching (working on)
-
-* Touchpad
-
-## Bugs
+## Hardware that needs patching (working on) and Bugs
 
 * Touchscreen unresponsive after deep sleep
 * Power events triggered during normal operation
