@@ -1,0 +1,24 @@
+# How to fix keyboard cover touchpad on Trekstor Surftab S11B
+
+## Disable HID Multitouch driver
+
+The problem of the not working touchpad on the S11B's keyboard cover seems to be related to Linux's multitouch driver. You can easily verify this by unloading the driver with this command ```sudo rmmod hid_multitouch```. If your touchpad is now working then this fix is for you.
+
+### Using the bash script
+
+This script has been written for Fedora 31 Linux and Red Hat Enterprise Linux 8.1. 
+
+1. Clone this repository to your machine
+
+```shell
+git clone https://github.com/bedawi/trekstor-s11b.git
+```
+
+2. Run install script
+
+```shell
+cd bugfixes/keyboardcover
+sudo bash fix_keyboardcover.bash
+```
+
+The script will add a boot parameter to the kernel to blacklist the kernel module from being loaded at boot time. It will also write a blacklist file to the modprobe service's configuration folder.
