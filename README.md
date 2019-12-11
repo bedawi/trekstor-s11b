@@ -20,3 +20,8 @@ This repository has been set up to help you to run Linux on your Trekstor Primet
 ## Hardware that needs patching (working on)
 
 * Touchpad
+
+## Bugs
+
+* Touchscreen unresponsive after deep sleep
+* Power events triggered during normal operation
