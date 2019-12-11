@@ -22,3 +22,9 @@ sudo bash fix_keyboardcover.bash
 ```
 
 The script will add a boot parameter to the kernel to blacklist the kernel module from being loaded at boot time. It will also write a blacklist file to the modprobe service's configuration folder.
+
+## Further Reading
+
+<https://access.redhat.com/solutions/41278>
+
+<https://manpages.ubuntu.com/manpages/precise/man5/modprobe.conf.5.html>
