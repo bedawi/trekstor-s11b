@@ -1,5 +1,22 @@
-# trekstor-s11b
+# Trekstor Primetab S11B Linux Support
 
-Setup Trekstor primetab S11B 
+## Welcome
 
-Test
+This repository has been set up to help you to run Linux on your Trekstor Primetab S11B Tablet PC. At the moment, development and testing is still going on and not for all hardware has a fix been found yet. 
+
+## Hardware working out of the box
+
+* Memory, RAM, Battery, USB
+* WiFi (802.11 A/C/N)
+* Screen
+* Touchscreen
+* Keyboard
+* Bluetooth
+
+## Hardware working with patches from this repository
+
+* Touchscreen orientation sensor -> See hwdb.d folder
+
+## Hardware that needs patching (working on)
+
+* Touchpad
