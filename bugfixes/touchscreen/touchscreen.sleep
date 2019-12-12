@@ -1,0 +1,19 @@
+#!/usr/bin/sh
+
+function output() {
+  echo "$@" | systemd-cat -t touchscreen.sleep.patch -p 6
+}
+
+if [ $1 == "pre" ]
+then
+    output "$2 triggered. Stopping Goodix driver."
+    /usr/sbin/lsmod | grep -q goodix && /usr/sbin/rmmod goodix || output "Module not loaded"
+    sleep 1
+elif [ $1 == "post" ]
+then
+    output "$2 triggered. Starting Goodix driver."
+    /usr/sbin/modprobe goodix
+else
+    output "Missing or wrong parameter."
+    echo "Missing or wrong parameter."    
+fi
