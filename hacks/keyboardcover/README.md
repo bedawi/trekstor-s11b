@@ -10,6 +10,8 @@ This script has been written for Fedora 31 Linux and Red Hat Enterprise Linux 8.
 
 1. Clone this repository to your machine
 
+...if you have not already done so.
+
 ```shell
 git clone https://github.com/bedawi/trekstor-s11b.git
 ```
@@ -17,7 +19,7 @@ git clone https://github.com/bedawi/trekstor-s11b.git
 2. Run install script
 
 ```shell
-cd bugfixes/keyboardcover
+cd hacks/keyboardcover
 sudo bash fix_keyboardcover.bash
 ```
 

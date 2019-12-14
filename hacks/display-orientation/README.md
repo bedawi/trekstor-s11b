@@ -13,7 +13,7 @@ git clone https://github.com/bedawi/trekstor-s11b.git
 2. Run install script
 
 ```shell
-cd hwdb.d
+cd hacks/display-orientation
 sudo bash install-touchscreen.bash
 ```
 
