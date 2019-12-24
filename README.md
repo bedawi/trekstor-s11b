@@ -20,7 +20,7 @@ This repository has been set up to help you to run Linux on your Trekstor Primet
 
 ## Hardware that needs patching (working on) and Bugs
 
-* Touchscreen unresponsive after deep sleep
+* Touchscreen unresponsive after suspend. See [Red Hat Bugzilla bugreport](https://github.com/bedawi/trekstor-s11b/projects/1)
 * Power events triggered during normal operation
 
 ## Tested with Fedora 31
