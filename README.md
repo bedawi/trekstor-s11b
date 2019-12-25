@@ -2,7 +2,7 @@
 
 ## Welcome
 
-This repository has been set up to help you to run Linux on your Trekstor Primetab S11B Tablet PC. At the moment, development and testing is still going on and not for all hardware has a fix been found yet. 
+This repository has been set up to help you to run Fedora Linux on your Trekstor Primetab S11B Tablet PC. At the moment, development and testing is still going on and not for all hardware has a fix been found yet. 
 
 ## Hardware working out of the box
 
