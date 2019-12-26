@@ -17,8 +17,8 @@ This repository has been set up to help you to run Fedora Linux on your Trekstor
 
 ## Hardware working with patches from this repository
 
-* Touchscreen orientation sensor -> See hwdb.d folder
-* Touchpad -> See bugfixes/keyboardcover
+* Touchscreen orientation sensor -> See [hacks/display-orientation folder](hacks/display-orientation/)
+* Touchpad -> See [hacks/keyboardcover folder](hacks/keyboardcover/)
 
 ## Hardware that needs patching (working on) and Bugs
 
