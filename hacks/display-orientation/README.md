@@ -2,6 +2,8 @@
 
 This setup has been tested on Fedora 31 Linux
 
+**Note: This device was already [added](https://github.com/systemd/systemd/pull/14342) to systemd hardware database. Please run a system update first to determine whether this patch is needed at all.**
+
 ## Setup
 
 1. Clone this repository to your machine
