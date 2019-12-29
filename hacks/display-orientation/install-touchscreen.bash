@@ -4,8 +4,8 @@ if [[ $EUID -ne 0 ]]; then
    echo "This script must be run as root" 1>&2
    exit 1
 fi
-# Installing Trekstor S11B Touchscreen
-echo "Installing Trekstor S11B Touchscreen..."
+# Hardware-DB entry
+echo "Copying 61-sensor-local.hwdb to /etc/udev/hwdb.d/..."
 cp 61-sensor-local.hwdb /etc/udev/hwdb.d/
 systemd-hwdb update
 udevadm trigger -v -p DEVNAME=/dev/iio\:device0
