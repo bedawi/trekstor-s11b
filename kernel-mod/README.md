@@ -22,6 +22,16 @@ On Fedora Linux run this command to install all the programs needed to build and
 $ sudo dnf -y install kernel-devel dkms make git
 ```
 
+### Update the system
+
+Update Fedora Linux to latest version by running:
+
+```bash
+$ sudo dnf -y update
+```
+
+Reboot before you continue!
+
 ## Download and install kernel module
 
 ### Download this repository to your Downloads folder
