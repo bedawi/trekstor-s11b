@@ -2,7 +2,9 @@
 
 ## Disable HID Multitouch driver
 
-The problem of the not working touchpad on the S11B's keyboard cover seems to be related to Linux's multitouch driver. You can easily verify this by unloading the driver with this command ```sudo rmmod hid_multitouch```. If your touchpad is now working then this fix is for you.
+The problem of the not working touchpad on the S11B's keyboard cover seems to be related to Linux's multitouch driver. It is solved by newer Kernel versions. Before applying this patch please update your system and reboot. The problem should sbe gone. If not...
+
+You can easily verify if this hack helps you by unloading the driver with this command ```sudo rmmod hid_multitouch```. If your touchpad is now working then this fix is for you.
 
 ### Using the bash script
 
