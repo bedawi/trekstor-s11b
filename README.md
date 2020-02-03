@@ -17,12 +17,12 @@ This repository has been set up to help you to run Fedora Linux on your Trekstor
 
 ## Hardware working with patches from this repository
 
+* Touchscreen unresponsive after suspend -> See [kernel-mod](kernel-mod/)
 * Touchscreen orientation sensor -> See [hacks/display-orientation folder](hacks/display-orientation/)
 * Touchpad -> See [hacks/keyboardcover folder](hacks/keyboardcover/)
 
 ## Hardware that needs patching (working on) and Bugs
 
-* [Touchscreen unresponsive after suspend](https://github.com/bedawi/trekstor-s11b/issues/1)
 * Power events triggered during normal operation
 
 ## Tested with Fedora 31
