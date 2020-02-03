@@ -49,13 +49,17 @@ $ sudo rmmod goodix
 ### Add, build and install the driver with DKMS
 
 ```bash
-sudo dkms add goodix/20200203
-sudo dkms build goodix/20200203
-sudo dkms install goodix/20200203
+$ sudo dkms add goodix/20200203
+$ sudo dkms build goodix/20200203
+$ sudo dkms install goodix/20200203
 ```
 
 The last step will take 2-3 minutes on the Trekstor S11B. You can follow whats happening behind the scenes by opening another terminal and running ```journalctl -f```.
 
 ### Test the new kernel module
 
-The kernel module should be loaded automatically after the last step has finished. 
+The kernel module should be loaded automatically after the last step has finished.
+
+## Further reading
+
+* Introduction to Creating DKMS Packages for Ubuntu, Part 1: <https://www.forshee.me/2012/03/16/introduction-to-creating-dkms-packages.html>
