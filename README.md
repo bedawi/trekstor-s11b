@@ -25,6 +25,6 @@ This repository has been set up to help you to run Fedora Linux on your Trekstor
 * Power events triggered during normal operation
 * Webcam support
 
-## Tested with Fedora 31
+## Tested with Fedora 31 and Ubuntu 19.10
 
-Right now all scripts, manuals and patches are made for and tested on Fedora 31 Linux. If you are using another distribution, please be aware that applications, commands and paths might be different.
+Right now all scripts, manuals and patches are made for and tested on Fedora 31 and Ubuntu 19.10. If you are using another distribution, please be aware that applications, commands and paths might be different.
