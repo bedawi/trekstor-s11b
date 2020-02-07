@@ -6,7 +6,7 @@ On Fedora 31 the kernel module for Goodix touchscreens is broken. Under certain 
 
 Thanks to the help of [Hans de Goede](https://github.com/jwrdegoede) a patch has been provided. Until this patch will be available on popular Linux distributions, a custom module, replacing the broken one, can be compiled on affected devices.
 
-In this example I use [DKMS](https://en.wikipedia.org/wiki/Dynamic_Kernel_Module_Support) (Dynamic Kernel Module Support) to compile and install the module. It will be automatically updated when a new kernel is installed. This exmaple only covers Fedora Linux. The command shown are different on other Linux distributions!
+In this example I use [DKMS](https://en.wikipedia.org/wiki/Dynamic_Kernel_Module_Support) (Dynamic Kernel Module Support) to compile and install the module. It will be automatically updated when a new kernel is installed.
 
 ## Preparations
 
@@ -21,6 +21,8 @@ On Fedora Linux run this command to install all the programs needed to build and
 ```bash
 $ sudo dnf -y install kernel-devel dkms make git
 ```
+
+On Pop!OS no extra packages need to be installed.
 
 ### Update the system
 
@@ -57,8 +59,6 @@ $ sudo rmmod goodix
 ### Add, build and install the driver with DKMS
 
 ```bash
-$ sudo dkms add goodix/20200207
-$ sudo dkms build goodix/20200207
 $ sudo dkms install goodix/20200207
 ```
 
