@@ -15,15 +15,15 @@ This repository has been set up to help you to run Fedora Linux on your Trekstor
 * Keyboard
 * Bluetooth
 
-## Hardware working with patches from this repository
+## Fixes provided by this repository
 
-* Touchscreen unresponsive after suspend -> See [kernel-mod](kernel-mod/)
-* Touchscreen orientation sensor -> See [hacks/display-orientation folder](hacks/display-orientation/)
-* Touchpad -> See [hacks/keyboardcover folder](hacks/keyboardcover/)
+* Screen orientation
+* Display driver working after suspend
 
-## Hardware that needs patching (working on) and Bugs
+## Not yet fixed
 
 * Power events triggered during normal operation
+* Webcam support
 
 ## Tested with Fedora 31
 
