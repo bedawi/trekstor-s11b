@@ -22,14 +22,28 @@ On Fedora Linux run this command to install all the programs needed to build and
 $ sudo dnf -y install kernel-devel dkms make git
 ```
 
+On Ubuntu Linux run this command to install all the programs needed to build and install the kernel module:
+
+```bash
+$ sudo apt install dkms
+```
+
 On Pop!OS no extra packages need to be installed.
 
 ### Update the system
 
-Update Fedora Linux to latest version by running:
+Update your Linux to latest version before you continue!
+
+On Fedora run:
 
 ```bash
 $ sudo dnf -y update
+```
+
+On Ubuntu run:
+
+```bash
+$ sudo apt update && sudo apt upgrade -y
 ```
 
 Reboot before you continue!
@@ -66,7 +80,21 @@ The last step will take 2-3 minutes on the Trekstor S11B. You can follow whats h
 
 ### Test the new kernel module
 
-The kernel module should be loaded automatically after the last step has finished.
+The kernel module should be loaded automatically after the last step has finished. Send your tablet to suspend and wake it up again after some seconds. The touchscreen should still be working.
+
+Typically dmesg shows an output like this:
+
+```bash
+$ dmesg | grep Goodix
+[   16.085836] Goodix-TS i2c-GDIX1001:00: i2c-GDIX1001:00 supply AVDD28 not found, using dummy regulator
+[   16.085869] Goodix-TS i2c-GDIX1001:00: i2c-GDIX1001:00 supply VDDIO not found, using dummy regulator
+[   16.086400] Goodix-TS i2c-GDIX1001:00: Using ACPI INTI and INTO methods for IRQ pin access
+[   16.086952] Goodix-TS i2c-GDIX1001:00: ID 928, version: 1040
+[   16.091295] input: Goodix Capacitive TouchScreen as /devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-9/i2c-GDIX1001:00/input/input15
+[  141.629386] Goodix-TS i2c-GDIX1001:00: Error reading config version: -121, resetting controller
+```
+
+The message ```Error reading config version: -121, resetting controller``` comes from the patched driver.
 
 ## Further reading
 

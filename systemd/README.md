@@ -1,6 +1,6 @@
 # Setting up the touchscreen orientation
 
-This setup has been tested on Fedora 31 Linux
+This setup has been tested on Fedora 31 and Ubuntu 19.10.
 
 **Note: This device was already [added](https://github.com/systemd/systemd/pull/14342) to systemd hardware database. Please run a system update first to determine whether this patch is needed at all.**
 
