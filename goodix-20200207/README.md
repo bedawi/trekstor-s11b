@@ -37,15 +37,13 @@ Reboot before you continue!
 ### Download this repository to your Downloads folder
 
 ```bash
-$ cd ~/Downloads
 $ git clone https://github.com/bedawi/trekstor-s11b.git
 ```
 
 ### Copy source code
 
 ```bash
-$ sudo mkdir /usr/src/goodix-20200203
-$ cp ~/Downloads/trekstor-s11b/kernel-mod/src/* /usr/src/goodix-20200203/
+$ sudo cp -r trekstor-s11b/goodix-20200207 /usr/src/
 ```
 
 ### Unload the existing kernel module from memory
@@ -59,9 +57,9 @@ $ sudo rmmod goodix
 ### Add, build and install the driver with DKMS
 
 ```bash
-$ sudo dkms add goodix/20200203
-$ sudo dkms build goodix/20200203
-$ sudo dkms install goodix/20200203
+$ sudo dkms add goodix/20200207
+$ sudo dkms build goodix/20200207
+$ sudo dkms install goodix/20200207
 ```
 
 The last step will take 2-3 minutes on the Trekstor S11B. You can follow whats happening behind the scenes by opening another terminal and running ```journalctl -f```.
