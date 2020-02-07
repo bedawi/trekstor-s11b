@@ -15,7 +15,7 @@ git clone https://github.com/bedawi/trekstor-s11b.git
 2. Run install script
 
 ```shell
-cd hacks/display-orientation
+cd trekstor-s11b/systemd
 sudo bash install-touchscreen.bash
 ```
 
