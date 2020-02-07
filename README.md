@@ -27,4 +27,4 @@ This repository has been set up to help you to run Fedora Linux on your Trekstor
 
 ## Tested with Fedora 31
 
-Right now all scripts, manuals and patches are made for and on Fedora 31 Linux. If you are using another distribution, please be aware that applications, commands and paths might be different. Support for other distributions is planned for the future.
+Right now all scripts, manuals and patches are made for and tested on Fedora 31 Linux. If you are using another distribution, please be aware that applications, commands and paths might be different.
