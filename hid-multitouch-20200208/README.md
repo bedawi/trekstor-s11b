@@ -2,7 +2,7 @@
 
 ## Summary
 
-In some kernel versions loading the hid_multitouch driver/kernel module causes problems with the Trekstor S11B keyboard cover's touchpad. The problem can be solved by compiling a newer version of the hid_multitouch module.
+In some kernel versions loading the hid_multitouch driver/kernel module causes problems with the Trekstor S11B keyboard cover's touchpad. The problem can be solved by compiling a newer version of the hid_multitouch module. The files used here come from [Linux Torvalds' Kernel repository](https://github.com/torvalds/linux/tree/master/drivers/hid).
 
 This problem is usually solved by a system update. On Fedora 31 there is no need to install this module, because a system update fixes the issue. On Ubuntu 19.10 (with Kernel 5.3.0-29-generic) the problem exists and this kernel module can solve it.
 
