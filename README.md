@@ -17,8 +17,9 @@ This repository has been set up to help you to run Fedora Linux on your Trekstor
 
 ## Fixes provided by this repository
 
-* Screen orientation
-* Display driver working after suspend
+* Screen orientation upside down
+* Display driver not working after suspend
+* HID multitouch driver / Keyboard cover touchpad not working
 
 ## Not yet fixed
 
