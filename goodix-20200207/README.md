@@ -16,11 +16,15 @@ First of all you need to disable [Secure Boot](https://en.wikipedia.org/wiki/Uni
 
 ### Install Kernel Development Tools
 
+#### Fedora Linux
+
 On Fedora Linux run this command to install all the programs needed to build and install the kernel module:
 
 ```bash
 $ sudo dnf -y install kernel-devel dkms make git
 ```
+
+#### Ubuntu Linux
 
 On Ubuntu Linux run this command to install all the programs needed to build and install the kernel module:
 
@@ -28,7 +32,11 @@ On Ubuntu Linux run this command to install all the programs needed to build and
 $ sudo apt install dkms
 ```
 
+#### Pop!OS
+
 On Pop!OS no extra packages need to be installed.
+
+#### Clear Linux*
 
 On Clear Linux* you need to install one of the following bundles, depending on your kernel: kernel-native-dkms or kernel-lts-dkms. The currently running kernel can be determined by running ```uname -r```. If you are running the native Kernel then run these commands to install the necessary kernel headers and tools:
 
