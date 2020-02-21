@@ -37,6 +37,7 @@ $ sudo swupd bundle-add kernel-native-dkms
 $ sudo clr-boot-manager update
 $ reboot
 ```
+
 Learn more about this in the [Clear Linux* documentation](https://docs.01.org/clearlinux/latest/guides/kernel/kernel-modules-dkms.html).
 
 ### Update the system
