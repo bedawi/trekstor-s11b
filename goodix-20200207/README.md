@@ -30,6 +30,15 @@ $ sudo apt install dkms
 
 On Pop!OS no extra packages need to be installed.
 
+On Clear Linux* you need to install one of the following bundles, depending on your kernel: kernel-native-dkms or kernel-lts-dkms. The currently running kernel can be determined by running ```uname -r```. If you are running the native Kernel then run these commands to install the necessary kernel headers and tools:
+
+```bash
+$ sudo swupd bundle-add kernel-native-dkms
+$ sudo clr-boot-manager update
+$ reboot
+```
+Learn more about this in the [Clear Linux* documentation](https://docs.01.org/clearlinux/latest/guides/kernel/kernel-modules-dkms.html).
+
 ### Update the system
 
 Update your Linux to latest version before you continue!
