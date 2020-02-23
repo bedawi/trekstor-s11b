@@ -1,5 +1,7 @@
 # Clear Linux on the Trekstor S11B
 
+![Trekstor Primetab S11B running Clear Linux Screenshot](https://techrevelations.de/wp-content/uploads/2020/02/Bildschirmfoto-vom-2020-02-22-20-25-32.png)
+
 ## Installation
 
 The normal installer can be used. System might not boot after installation because wrong EFI boot target is set. This can be fixed in UEFI (Bios)
