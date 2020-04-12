@@ -4,7 +4,7 @@
 
 On Fedora 31 the kernel module for Goodix touchscreens is broken. Under certain conditions the configuration of the touchscreen cannot be read by the driver. On the Trekstor S11B this happens when it was suspended.
 
-Thanks to the help of [Hans de Goede](https://github.com/jwrdegoede) a patch has been provided. Until this patch will be available on popular Linux distributions, a custom module, replacing the broken one, can be compiled on affected devices.
+Thanks to the help of [Hans de Goede](https://github.com/jwrdegoede) a patch has been provided. Until this patch will be available on popular Linux distributions, a custom module, replacing the broken one, can be compiled on affected devices. (Update: There are [news out there](https://www.phoronix.com/scan.php?page=news_item&px=Bay-Trail-Cherry-Trail-Touch-57) that kernel 5.7 will ship the fixed modules.)
 
 In this example I use [DKMS](https://en.wikipedia.org/wiki/Dynamic_Kernel_Module_Support) (Dynamic Kernel Module Support) to compile and install the module. It will be automatically updated when a new kernel is installed.
 
