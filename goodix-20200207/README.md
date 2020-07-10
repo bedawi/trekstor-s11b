@@ -38,13 +38,7 @@ On Pop!OS no extra packages need to be installed.
 
 #### Clear Linux*
 
-On Clear Linux* you need to install one of the following bundles, depending on your kernel: kernel-native-dkms or kernel-lts-dkms. The currently running kernel can be determined by running ```uname -r```. If you are running the native Kernel then run these commands to install the necessary kernel headers and tools:
-
-```bash
-$ sudo swupd bundle-add kernel-native-dkms
-$ sudo clr-boot-manager update
-$ reboot
-```
+On Clear Linux* the touchscreen driver now works out of the box. No kernel module needs to be built.
 
 Learn more about this in the [Clear Linux* documentation](https://docs.01.org/clearlinux/latest/guides/kernel/kernel-modules-dkms.html).
 
